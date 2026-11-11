@@ -1,0 +1,1876 @@
+{
+  "updatedAt": "2026-11-11T14:46:53.829Z",
+  "source": "TDTChannels — https://www.tdtchannels.com/ (señales); iptv-org (logos); Mediaset Infinity (accesos oficiales)",
+  "groups": [
+    "Nacional",
+    "Mediaset (oficial)",
+    "Noticias",
+    "Deportes",
+    "Infantil",
+    "Andalucía",
+    "Baleares",
+    "Canarias",
+    "Cantabria",
+    "Castilla-La Mancha",
+    "Castilla y León",
+    "Cataluña",
+    "Madrid",
+    "Comunitat Valenciana",
+    "Extremadura",
+    "Galicia",
+    "La Rioja",
+    "Navarra",
+    "País Vasco",
+    "R. de Murcia",
+    "Internacional",
+    "Música",
+    "Religión"
+  ],
+  "defaults": [
+    "La1.TV",
+    "La2.TV",
+    "Antena3.ATP",
+    "LaSexta.ATP",
+    "24Horas.TV",
+    "TDP.TV"
+  ],
+  "channels": [
+    {
+      "id": "Antena3.ATP",
+      "name": "Antena 3",
+      "group": "Nacional",
+      "logo": "/logos/Antena3.ATP.png",
+      "urls": [],
+      "resolver": {
+        "type": "atresplayer",
+        "liveId": "5a6a165a7ed1a834493ebf6a"
+      },
+      "headers": {
+        "referer": "https://www.atresplayer.com/",
+        "origin": "https://www.atresplayer.com"
+      }
+    },
+    {
+      "id": "Atreseries.ATP",
+      "name": "Atreseries",
+      "group": "Nacional",
+      "logo": "/logos/Atreseries.ATP.png",
+      "urls": [],
+      "resolver": {
+        "type": "atresplayer",
+        "liveId": "5a6a189a7ed1a834493ebf70"
+      },
+      "headers": {
+        "referer": "https://www.atresplayer.com/",
+        "origin": "https://www.atresplayer.com"
+      }
+    },
+    {
+      "id": "La1.TV",
+      "name": "La 1",
+      "group": "Nacional",
+      "logo": "/logos/La1.TV.png",
+      "urls": [
+        "https://rtvelivestream.rtve.es/rtvesec/la1/la1_main_dvr.m3u8"
+      ]
+    },
+    {
+      "id": "La2.TV",
+      "name": "La 2",
+      "group": "Nacional",
+      "logo": "/logos/La2.TV.png",
+      "urls": [
+        "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main_dvr.m3u8",
+        "https://stream.ads.ottera.tv/playlist.m3u8?network_id=15618"
+      ]
+    },
+    {
+      "id": "LaSexta.ATP",
+      "name": "laSexta",
+      "group": "Nacional",
+      "logo": "/logos/LaSexta.ATP.png",
+      "urls": [],
+      "resolver": {
+        "type": "atresplayer",
+        "liveId": "5a6a172c7ed1a834493ebf6b"
+      },
+      "headers": {
+        "referer": "https://www.atresplayer.com/",
+        "origin": "https://www.atresplayer.com"
+      }
+    },
+    {
+      "id": "Mega.ATP",
+      "name": "Mega",
+      "group": "Nacional",
+      "logo": "/logos/Mega.ATP.png",
+      "urls": [],
+      "resolver": {
+        "type": "atresplayer",
+        "liveId": "5a6a18357ed1a834493ebf6f"
+      },
+      "headers": {
+        "referer": "https://www.atresplayer.com/",
+        "origin": "https://www.atresplayer.com"
+      }
+    },
+    {
+      "id": "Neox.ATP",
+      "name": "Neox",
+      "group": "Nacional",
+      "logo": "/logos/Neox.ATP.png",
+      "urls": [],
+      "resolver": {
+        "type": "atresplayer",
+        "liveId": "5a6a17da7ed1a834493ebf6d"
+      },
+      "headers": {
+        "referer": "https://www.atresplayer.com/",
+        "origin": "https://www.atresplayer.com"
+      }
+    },
+    {
+      "id": "Nova.ATP",
+      "name": "Nova",
+      "group": "Nacional",
+      "logo": "/logos/Nova.ATP.png",
+      "urls": [],
+      "resolver": {
+        "type": "atresplayer",
+        "liveId": "5a6a180b7ed1a834493ebf6e"
+      },
+      "headers": {
+        "referer": "https://www.atresplayer.com/",
+        "origin": "https://www.atresplayer.com"
+      }
+    },
+    {
+      "id": "13.TV",
+      "name": "TRECE",
+      "group": "Nacional",
+      "logo": "/logos/13.TV.png",
+      "urls": [
+        "https://play.cdn.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/021/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "BeMad.EXT",
+      "name": "Be Mad",
+      "group": "Mediaset (oficial)",
+      "logo": "/logos/BeMad.EXT.png",
+      "urls": [],
+      "externalUrl": "https://www.mediasetinfinity.es/directo/bemad/"
+    },
+    {
+      "id": "Boing.EXT",
+      "name": "Boing",
+      "group": "Mediaset (oficial)",
+      "logo": "/logos/Boing.EXT.png",
+      "urls": [],
+      "externalUrl": "https://www.mediasetinfinity.es/directo/boing/"
+    },
+    {
+      "id": "Cuatro.EXT",
+      "name": "Cuatro",
+      "group": "Mediaset (oficial)",
+      "logo": "/logos/Cuatro.EXT.png",
+      "urls": [],
+      "externalUrl": "https://www.mediasetinfinity.es/directo/cuatro/"
+    },
+    {
+      "id": "Divinity.EXT",
+      "name": "Divinity",
+      "group": "Mediaset (oficial)",
+      "logo": "/logos/Divinity.EXT.png",
+      "urls": [],
+      "externalUrl": "https://www.mediasetinfinity.es/directo/divinity/"
+    },
+    {
+      "id": "Energy.EXT",
+      "name": "Energy",
+      "group": "Mediaset (oficial)",
+      "logo": "/logos/Energy.EXT.png",
+      "urls": [],
+      "externalUrl": "https://www.mediasetinfinity.es/directo/energy/"
+    },
+    {
+      "id": "FDF.EXT",
+      "name": "FDF",
+      "group": "Mediaset (oficial)",
+      "logo": "/logos/FDF.EXT.png",
+      "urls": [],
+      "externalUrl": "https://www.mediasetinfinity.es/directo/fdf/"
+    },
+    {
+      "id": "Telecinco.EXT",
+      "name": "Telecinco",
+      "group": "Mediaset (oficial)",
+      "logo": "/logos/Telecinco.EXT.png",
+      "urls": [],
+      "externalUrl": "https://www.mediasetinfinity.es/directo/telecinco/"
+    },
+    {
+      "id": "24Horas.TV",
+      "name": "24h",
+      "group": "Noticias",
+      "logo": "/logos/24Horas.TV.png",
+      "urls": [
+        "https://ztnr.rtve.es/ztnr/1694255.m3u8",
+        "https://rtvelivestream.rtve.es/rtvesec/24h/24h_main_dvr.m3u8",
+        "https://stream.ads.ottera.tv/playlist.m3u8?network_id=15621"
+      ]
+    },
+    {
+      "id": "324.TV",
+      "name": "3CatInfo",
+      "group": "Noticias",
+      "logo": "/logos/324.TV.png",
+      "urls": [
+        "https://directes-tv-cat.3catdirectes.cat/live-content/canal324-hls/master.m3u8",
+        "https://directes-tv-cat.3catdirectes.cat/live-origin/canal324-hls/master.m3u8",
+        "https://directes-tv-es.3catdirectes.cat/live-content/canal324-hls/master.m3u8"
+      ]
+    },
+    {
+      "id": "ElConfidencial.TV",
+      "name": "El Confidencial",
+      "group": "Noticias",
+      "logo": "/logos/ElConfidencial.TV.jpg",
+      "urls": [
+        "https://sis-global.prod.samsungtv.plus/v1/tvpprd/sc-bmo0niz694whx.m3u8"
+      ]
+    },
+    {
+      "id": "ElPais.TV",
+      "name": "El País",
+      "group": "Noticias",
+      "logo": "/logos/ElPais.TV.jpg",
+      "urls": [
+        "https://d2epgk1fomaa1g.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-9n8y4tw0bk3an/live/fast-channel-el-pais/fast-channel-el-pais.m3u8"
+      ]
+    },
+    {
+      "id": "Euronews.TV",
+      "name": "Euronews",
+      "group": "Noticias",
+      "logo": "/logos/Euronews.TV.jpg",
+      "urls": [
+        "https://euronews-live-spa-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6571/bitok/eyJzdGlkIjoiMDA0YjY0NTMtYjY2MC00ZTZkLTlkNzEtMTk3YTM3ZDZhZWIxIiwibWt0IjoiZXMiLCJjaCI6NjU3MSwicHRmIjoxfQ==/26034/euronews-es.m3u8"
+      ]
+    },
+    {
+      "id": "Negocios.TV",
+      "name": "Negocios TV",
+      "group": "Noticias",
+      "logo": "/logos/Negocios.TV.png",
+      "urls": [
+        "https://negociostv-negociostv-samsunges.amagi.tv/hls/amagi_hls_data_negociost-negociostv-samsunges/CDN/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "E3.TV",
+      "name": "Esport3",
+      "group": "Deportes",
+      "logo": "/logos/E3.TV.png",
+      "urls": [
+        "https://directes-tv-cat.3catdirectes.cat/live-origin/esport3-hls/master.m3u8",
+        "https://directes-tv-es.3catdirectes.cat/live-origin/esport3-hls/master.m3u8"
+      ]
+    },
+    {
+      "id": "ETBD.TV",
+      "name": "ETB Deportes (Kirolak 360)",
+      "group": "Deportes",
+      "logo": "/logos/ETBD.TV.jpg",
+      "urls": [
+        "https://multimedia.eitb.eus/live-content/oka1hd-hls/master.m3u8",
+        "https://multimedia.eitb.eus/live-content/oka2hd-hls/master.m3u8",
+        "https://multimedia.eitb.eus/live-content/oka3hd-hls/master.m3u8"
+      ],
+      "headers": {
+        "referer": "https://kirolakeitb.eus/es/kirolak-360/en-directo/"
+      }
+    },
+    {
+      "id": "RMTV.TV",
+      "name": "Real Madrid TV",
+      "group": "Deportes",
+      "logo": "/logos/RMTV.TV.png",
+      "urls": [
+        "https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8",
+        "https://rmtv.akamaized.net/hls/live/2043154/rmtv-en-web/master.m3u8"
+      ]
+    },
+    {
+      "id": "TDP.TV",
+      "name": "Teledeporte",
+      "group": "Deportes",
+      "logo": "/logos/TDP.TV.png",
+      "urls": [
+        "https://rtvelivestream.rtve.es/rtvesec/tdp/tdp_main.m3u8"
+      ]
+    },
+    {
+      "id": "Top_Barça.TV",
+      "name": "Top Barça",
+      "group": "Deportes",
+      "logo": "/logos/Top_Barca.TV.avif",
+      "urls": [
+        "https://amg17560-fcb-amg17560c2-samsung-es-9803.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg17560-fcbarcelona-topbarcaspanish-samsunges/playlist.m3u8",
+        "https://amg17560-fcb-amg17560c3-lg-es-11383.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg17560-fcbarcelona-topbarcacatala-lges/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "Vinx.TV",
+      "name": "Vinx TV",
+      "group": "Deportes",
+      "logo": "/logos/Vinx.TV.png",
+      "urls": [
+        "https://live.enfoque.media:5443/live/streams/vinxtv.m3u8"
+      ]
+    },
+    {
+      "id": "Clan.TV",
+      "name": "Clan",
+      "group": "Infantil",
+      "logo": "/logos/Clan.TV.png",
+      "urls": [
+        "https://ztnr.rtve.es/ztnr/5466990.m3u8",
+        "https://rtvelivestream.rtve.es/rtvesec/clan/clan_main_dvr.m3u8",
+        "https://stream.ads.ottera.tv/playlist.m3u8?network_id=15620"
+      ]
+    },
+    {
+      "id": "EnergeekFan.TV",
+      "name": "EnerGeek Fan",
+      "group": "Infantil",
+      "logo": "/logos/EnergeekFan.TV.png",
+      "urls": [
+        "https://cl-2.backend.energeek.cl/bkp/egfanweb/index.m3u8?token=TDTCh4nnelsES",
+        "https://cl-2.backend.energeek.cl/bkp/egfan/mobile/index.m3u8?token=TDTCh4nnelsES"
+      ]
+    },
+    {
+      "id": "EnergeekRetro.TV",
+      "name": "EnerGeek Retro",
+      "group": "Infantil",
+      "logo": "/logos/EnergeekRetro.TV.jpg",
+      "urls": [
+        "https://cl-2.backend.energeek.cl/bkp/egretroweb/index.m3u8?token=TDTCh4nnelsES",
+        "https://cl-2.backend.energeek.cl/bkp/egretro/mobile/index.m3u8?token=TDTCh4nnelsES"
+      ]
+    },
+    {
+      "id": "SX3.TV",
+      "name": "SX3",
+      "group": "Infantil",
+      "logo": "/logos/SX3.TV.png",
+      "urls": [
+        "https://directes-tv-cat.3catdirectes.cat/live-content/super3-hls/master.m3u8",
+        "https://directes-tv-cat.3catdirectes.cat/live-origin/super3-hls/master.m3u8",
+        "https://directes-tv-es.3catdirectes.cat/live-content/super3-hls/master.m3u8"
+      ]
+    },
+    {
+      "id": "101Antequera.TV",
+      "name": "101TV Antequera",
+      "group": "Andalucía",
+      "logo": "/logos/101Antequera.TV.png",
+      "urls": [
+        "https://liveingesta318.cdnmedia.tv/101weblive/smil:antequera.smil/playlist.m3u8"
+      ],
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 CrKey/1.44.191160",
+        "referer": "https://player.instantvideocloud.net/"
+      }
+    },
+    {
+      "id": "101Malaga.TV",
+      "name": "101TV Málaga",
+      "group": "Andalucía",
+      "logo": "/logos/101Malaga.TV.png",
+      "urls": [
+        "https://liveingesta318.cdnmedia.tv/101televisionlive/smil:malagaott.smil/playlist.m3u8?DVR",
+        "https://liveingesta318.cdnmedia.tv/101weblive/smil:CofradeMalaga.smil/playlist.m3u8"
+      ],
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 CrKey/1.44.191160",
+        "referer": "https://player.instantvideocloud.net/"
+      }
+    },
+    {
+      "id": "7TV_Andalucía.TV",
+      "name": "7TV Andalucía",
+      "group": "Andalucía",
+      "logo": "/logos/7TV_Andalucia.TV.png",
+      "urls": [
+        "https://especial7tv.gestec-video.com/hls/regional.m3u8"
+      ]
+    },
+    {
+      "id": "7TV_Cadiz.TV",
+      "name": "7TV Cádiz",
+      "group": "Andalucía",
+      "logo": "/logos/7TV_Cadiz.TV.jpg",
+      "urls": [
+        "https://streaming004.gestec-video.com/hls/7TVCADIZ.m3u8"
+      ]
+    },
+    {
+      "id": "7TV_Cordoba.TV",
+      "name": "7TV Córdoba",
+      "group": "Andalucía",
+      "logo": "/logos/7TV_Cordoba.TV.png",
+      "urls": [
+        "https://streaming004.gestec-video.com/hls/7TVCORDOBA.m3u8"
+      ]
+    },
+    {
+      "id": "7TV_Huelva.TV",
+      "name": "7TV Huelva",
+      "group": "Andalucía",
+      "logo": "/logos/7TV_Huelva.TV.jpg",
+      "urls": [
+        "https://streaming004.gestec-video.com/hls/regional.m3u8"
+      ]
+    },
+    {
+      "id": "7TV_Jaen.TV",
+      "name": "7TV Jaén",
+      "group": "Andalucía",
+      "logo": "/logos/7TV_Jaen.TV.png",
+      "urls": [
+        "https://streaming004.gestec-video.com/hls/7TVJAEN.m3u8"
+      ]
+    },
+    {
+      "id": "7TV_Malaga.TV",
+      "name": "7TV Málaga",
+      "group": "Andalucía",
+      "logo": "/logos/7TV_Malaga.TV.png",
+      "urls": [
+        "https://streaming004.gestec-video.com/hls/7TVMALAGA.m3u8"
+      ]
+    },
+    {
+      "id": "7TV_Sevilla.TV",
+      "name": "7TV Sevilla",
+      "group": "Andalucía",
+      "logo": "/logos/7TV_Sevilla.TV.png",
+      "urls": [
+        "https://especial7tv.gestec-video.com/hls/7TVSEVILLA.m3u8"
+      ]
+    },
+    {
+      "id": "8TV_Chiclana.TV",
+      "name": "8TV Chiclana",
+      "group": "Andalucía",
+      "logo": "/logos/8TV_Chiclana.TV.jpg",
+      "urls": [
+        "https://s.emisoras.tv:8081/chiclana/index.m3u8"
+      ]
+    },
+    {
+      "id": "8TV_LaJanda.TV",
+      "name": "8TV La Janda",
+      "group": "Andalucía",
+      "logo": "/logos/8TV_LaJanda.TV.jpg",
+      "urls": [
+        "https://s.emisoras.tv:8081/lajanda/index.m3u8"
+      ]
+    },
+    {
+      "id": "8TV_SierraCadiz.TV",
+      "name": "8TV Sierra de Cádiz",
+      "group": "Andalucía",
+      "logo": "/logos/8TV_SierraCadiz.TV.jpg",
+      "urls": [
+        "https://s.emisoras.tv:8081/sierradecadiz/index.m3u8"
+      ]
+    },
+    {
+      "id": "9LaLoma.TV",
+      "name": "9 La Loma TV",
+      "group": "Andalucía",
+      "logo": "/logos/9LaLoma.TV.png",
+      "urls": [
+        "https://9laloma.tv/live.m3u8"
+      ]
+    },
+    {
+      "id": "Almería_24h.TV",
+      "name": "Almería 24h TV",
+      "group": "Andalucía",
+      "logo": "/logos/Almeria_24h.TV.jpg",
+      "urls": [
+        "https://broadcast1.radioponiente.org/almeria24h_aac/index.m3u8"
+      ]
+    },
+    {
+      "id": "AlmeriaTV.TV",
+      "name": "Almería TV",
+      "group": "Andalucía",
+      "logo": "/logos/AlmeriaTV.TV.avif",
+      "urls": [
+        "https://broadcast1.radioponiente.org/atv/index.m3u8"
+      ]
+    },
+    {
+      "id": "AndaluciaCocina.TV",
+      "name": "Andalucía Cocina",
+      "group": "Andalucía",
+      "logo": "/logos/AndaluciaCocina.TV.jpg",
+      "urls": [
+        "https://cloud.fastchannel.es/mic/manifiest/hls/acocina/acocina.m3u8"
+      ]
+    },
+    {
+      "id": "CanalMalaga.TV",
+      "name": "Canal Málaga",
+      "group": "Andalucía",
+      "logo": "/logos/CanalMalaga.TV.png",
+      "urls": [
+        "https://canalmalaga-tv-live.flumotion.com/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "CanalSanRoque.TV",
+      "name": "Canal San Roque",
+      "group": "Andalucía",
+      "logo": "/logos/CanalSanRoque.TV.png",
+      "urls": [
+        "https://cdnlivevlc.codev8.net/aytosanroquelive/smil:channel1.smil/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "CanalSurA.TV",
+      "name": "Canal Sur Andalucía",
+      "group": "Andalucía",
+      "logo": "/logos/CanalSurA.TV.png",
+      "urls": [
+        "https://live-24-canalsur.interactvty.pro/9bb0f4edcb8946e79f5017ddca6c02b0/74cdbd1b401a7598ab8f3e9b5652c9909daa60dd4f6f96f28396a3f1cfd926f2.m3u8",
+        "https://dfk2a268yviz9.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ddiii1m6jt6of/CanalSurAndaluciaES.m3u8",
+        "https://rtva-channel22.flumotion.cloud/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "CanalSurMasNoticias.TV",
+      "name": "Canal Sur Más Noticias",
+      "group": "Andalucía",
+      "logo": "/logos/CanalSurMasNoticias.TV.avif",
+      "urls": [
+        "https://rtva-channel42.flumotion.cloud/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "CanalCosta.TV",
+      "name": "CanalCosta",
+      "group": "Andalucía",
+      "logo": "/logos/CanalCosta.TV.png",
+      "urls": [
+        "https://5f71743aa95e4.streamlock.net:1936/CanalcostaTV/endirecto/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "Condavision.TV",
+      "name": "Condavisión",
+      "group": "Andalucía",
+      "logo": "/logos/Condavision.TV.png",
+      "urls": [
+        "https://5f71743aa95e4.streamlock.net:1936/Condavision/endirecto/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "CostaNO.TV",
+      "name": "Costa Noroeste TV",
+      "group": "Andalucía",
+      "logo": "/logos/CostaNO.TV.png",
+      "urls": [
+        "https://limited31.todostreaming.es/live/noroestetv-livestream.m3u8"
+      ]
+    },
+    {
+      "id": "DiezTV_Andujar.TV",
+      "name": "Diez TV Andújar",
+      "group": "Andalucía",
+      "logo": "/logos/DiezTV_Andujar.TV.avif",
+      "urls": [
+        "https://streamtv2.elitecomunicacion.cloud:3305/live/10tvandujarlive.m3u8"
+      ]
+    },
+    {
+      "id": "DiezTV_LasVillas.TV",
+      "name": "Diez TV Las Villas",
+      "group": "Andalucía",
+      "logo": "/logos/DiezTV_LasVillas.TV.png",
+      "urls": [
+        "https://streaming.cloud.innovasur.es/mmj2/index.m3u8"
+      ]
+    },
+    {
+      "id": "DiezTV_Ubeda.TV",
+      "name": "Diez TV Úbeda",
+      "group": "Andalucía",
+      "logo": "/logos/DiezTV_Ubeda.TV.png",
+      "urls": [
+        "https://streaming.cloud.innovasur.es/mmj/index.m3u8"
+      ]
+    },
+    {
+      "id": "EsteponaTV.TV",
+      "name": "Estepona TV",
+      "group": "Andalucía",
+      "logo": "/logos/EsteponaTV.TV.png",
+      "urls": [
+        "https://cloudvideo.servers10.com:8081/8022/index.m3u8"
+      ]
+    },
+    {
+      "id": "FuengirolaTV.TV",
+      "name": "Fuengirola TV",
+      "group": "Andalucía",
+      "logo": "/logos/FuengirolaTV.TV.jpg",
+      "urls": [
+        "https://streaming004.gestec-video.com/hls/FTV.m3u8"
+      ]
+    },
+    {
+      "id": "HuelvaConecta.TV",
+      "name": "Huelva Conecta",
+      "group": "Andalucía",
+      "logo": "/logos/HuelvaConecta.TV.png",
+      "urls": [
+        "https://servidor.islahostingla.com:3542/live/huelvaconecta3live.m3u8"
+      ]
+    },
+    {
+      "id": "InterAlmeria.TV",
+      "name": "Interalmería TV",
+      "group": "Andalucía",
+      "logo": "/logos/InterAlmeria.TV.png",
+      "urls": [
+        "https://interalmeria.tv/directo/live.m3u8"
+      ]
+    },
+    {
+      "id": "M95Marbella.TV",
+      "name": "M95 Marbella",
+      "group": "Andalucía",
+      "logo": "/logos/M95Marbella.TV.png",
+      "urls": [
+        "https://limited2.todostreaming.es/live/m95-livestream.m3u8"
+      ]
+    },
+    {
+      "id": "MarbellaTV.TV",
+      "name": "Marbella TV",
+      "group": "Andalucía",
+      "logo": "/logos/MarbellaTV.TV.png",
+      "urls": [
+        "https://streaming.rtvmarbella.tv/hls/streamingweb.m3u8"
+      ]
+    },
+    {
+      "id": "Mijas340TV.TV",
+      "name": "Mijas 3.40 TV",
+      "group": "Andalucía",
+      "logo": "/logos/Mijas340TV.TV.png",
+      "urls": [
+        "https://streaming004.gestec-video.com/hls/MIJAS.m3u8"
+      ]
+    },
+    {
+      "id": "OndaAlgeciras.TV",
+      "name": "Onda Algeciras TV",
+      "group": "Andalucía",
+      "logo": "/logos/OndaAlgeciras.TV.png",
+      "urls": [
+        "https://cloudtv.provideo.es/live/algecirastv-livestream.m3u8"
+      ]
+    },
+    {
+      "id": "OndaCadiz.TV",
+      "name": "Onda Cádiz",
+      "group": "Andalucía",
+      "logo": "/logos/OndaCadiz.TV.png",
+      "urls": [
+        "https://ondacadiztv.es:30443/octv/directo_multi/playlist.m3u8",
+        "https://ondacadiztv.es:30443/octv/24h/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "PTVCordoba.TV",
+      "name": "PTV Córdoba",
+      "group": "Andalucía",
+      "logo": "/logos/PTVCordoba.TV.png",
+      "urls": [
+        "https://streamer.zapitv.com/PTV_CORDOBA/index.m3u8"
+      ]
+    },
+    {
+      "id": "PTV_Granada.TV",
+      "name": "PTV Granada",
+      "group": "Andalucía",
+      "logo": "/logos/PTV_Granada.TV.png",
+      "urls": [
+        "https://streamer.zapitv.com/PTV-granada/index.m3u8"
+      ],
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "id": "PTV_Linares.TV",
+      "name": "PTV Linares",
+      "group": "Andalucía",
+      "logo": "/logos/PTV_Linares.TV.png",
+      "urls": [
+        "https://streamer.zapitv.com/ptv-linarez/index.m3u8"
+      ],
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "id": "PTV_Malaga.TV",
+      "name": "PTV Málaga",
+      "group": "Andalucía",
+      "logo": "/logos/PTV_Malaga.TV.png",
+      "urls": [
+        "https://streamer.zapitv.com/PTV-malaga/index.m3u8"
+      ],
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "id": "PTV_Sevilla.TV",
+      "name": "PTV Sevilla",
+      "group": "Andalucía",
+      "logo": "/logos/PTV_Sevilla.TV.png",
+      "urls": [
+        "https://streamer.zapitv.com/PTV_sevilla/index.m3u8"
+      ],
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "id": "TeleGranada.TV",
+      "name": "TeleGranada",
+      "group": "Andalucía",
+      "logo": "/logos/TeleGranada.TV.jpg",
+      "urls": [
+        "https://telegranada.es/hls/stream.m3u8"
+      ]
+    },
+    {
+      "id": "Teleonuba.TV",
+      "name": "Teleonuba",
+      "group": "Andalucía",
+      "logo": "/logos/Teleonuba.TV.png",
+      "urls": [
+        "https://5f71743aa95e4.streamlock.net:1936/Teleonuba/endirecto/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "TG7.TV",
+      "name": "TG7",
+      "group": "Andalucía",
+      "logo": "/logos/TG7.TV.jpg",
+      "urls": [
+        "https://flu-01.hucame.es/TG7/index.fmp4.m3u8"
+      ]
+    },
+    {
+      "id": "Torrevision.TV",
+      "name": "Torremolinos TV",
+      "group": "Andalucía",
+      "logo": "/logos/Torrevision.TV.avif",
+      "urls": [
+        "https://cdnlivevlc.codev8.net/canaltorremolinoslive/smil:channel1.smil/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "TuyaLaJanda.TV",
+      "name": "Tuya La Janda TV",
+      "group": "Andalucía",
+      "logo": "/logos/TuyaLaJanda.TV.avif",
+      "urls": [
+        "https://nimble.tuyapro.es/app/tv/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "TVM_Cordoba.TV",
+      "name": "TVM Córdoba",
+      "group": "Andalucía",
+      "logo": "/logos/TVM_Cordoba.TV.png",
+      "urls": [
+        "https://d16pwlnz9msuji.cloudfront.net/wct-dad9c712-1c61-4a61-aeee-8be9f5c9e6e9/continuous/8fbfd2f5-30c2-4d48-a24e-73f5d35ba491/index.m3u8"
+      ]
+    },
+    {
+      "id": "Canal4Mallorca.TV",
+      "name": "Canal 4 TV Mallorca",
+      "group": "Baleares",
+      "logo": "/logos/Canal4Mallorca.TV.avif",
+      "urls": [
+        "https://5caf24a595d94.streamlock.net:1937/8110/8110/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "TEF.TV",
+      "name": "TEF",
+      "group": "Baleares",
+      "logo": "/logos/TEF.TV.jpg",
+      "urls": [
+        "https://tef.servertv.online:3268/live/teflive.m3u8"
+      ]
+    },
+    {
+      "id": "24H_CAN.TV",
+      "name": "24h Canarias",
+      "group": "Canarias",
+      "logo": "/logos/24H_CAN.TV.jpg",
+      "urls": [
+        "https://ztnr.rtve.es/ztnr/5473142.m3u8",
+        "https://rtvelivestream.rtve.es/rtvesec/can/24h_can_main_dvr.m3u8"
+      ]
+    },
+    {
+      "id": "AfortunadasTV.TV",
+      "name": "Afortunadas TV",
+      "group": "Canarias",
+      "logo": "/logos/AfortunadasTV.TV.jpg",
+      "urls": [
+        "https://cloudvideo.servers10.com:8081/8108/index.m3u8"
+      ]
+    },
+    {
+      "id": "AhoraTV.TV",
+      "name": "Ahora TV",
+      "group": "Canarias",
+      "logo": "/logos/AhoraTV.TV.avif",
+      "urls": [
+        "https://tv.mediacp.eu/hls/ahoratv/ahoratv.m3u8"
+      ]
+    },
+    {
+      "id": "AtlánticoTV.TV",
+      "name": "Atlántico Televisión",
+      "group": "Canarias",
+      "logo": "/logos/AtlanticoTV.TV.jpg",
+      "urls": [
+        "https://live.atlanticotelevision.com/hls/hi/index.m3u8"
+      ]
+    },
+    {
+      "id": "Canal4_Tenerife.TV",
+      "name": "Canal 4 Tenerife",
+      "group": "Canarias",
+      "logo": "/logos/Canal4_Tenerife.TV.avif",
+      "urls": [
+        "https://videoserver.tmcreativos.com:19360/hkbpjryheu/hkbpjryheu.m3u8"
+      ]
+    },
+    {
+      "id": "FuerteventuraTV.TV",
+      "name": "Fuerteventura TV",
+      "group": "Canarias",
+      "logo": "/logos/FuerteventuraTV.TV.png",
+      "urls": [
+        "https://live.lancelot.tv/directo/fuerteventura.television/index.m3u8"
+      ]
+    },
+    {
+      "id": "La1_CAN.TV",
+      "name": "La 1 Canarias",
+      "group": "Canarias",
+      "logo": "/logos/La1_CAN.TV.png",
+      "urls": [
+        "https://rtvelivestream.rtve.es/rtvesec/can/la1_can_main_dvr.m3u8"
+      ]
+    },
+    {
+      "id": "La2_CAN.TV",
+      "name": "La 2 Canarias",
+      "group": "Canarias",
+      "logo": "/logos/La2_CAN.TV.jpg",
+      "urls": [
+        "https://rtvelivestream.rtve.es/rtvesec/can/la2_can_main_dvr.m3u8"
+      ]
+    },
+    {
+      "id": "LancelotTV.TV",
+      "name": "Lancelot TV",
+      "group": "Canarias",
+      "logo": "/logos/LancelotTV.TV.png",
+      "urls": [
+        "https://5c0956165db0b.streamlock.net:8090/directo/_definst_/lancelot.television/master.m3u8"
+      ]
+    },
+    {
+      "id": "MirameTV.TV",
+      "name": "Mírame TV",
+      "group": "Canarias",
+      "logo": "/logos/MirameTV.TV.png",
+      "urls": [
+        "https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=13696&live=1"
+      ]
+    },
+    {
+      "id": "TenerifeMasTV.TV",
+      "name": "Tenerife Más TV",
+      "group": "Canarias",
+      "logo": "/logos/TenerifeMasTV.TV.jpg",
+      "urls": [
+        "https://k20.usastreams.com:8081/tenerifeplus/index.m3u8"
+      ]
+    },
+    {
+      "id": "Canarias.TV",
+      "name": "TV Canaria (RTVC)",
+      "group": "Canarias",
+      "logo": "/logos/Canarias.TV.png",
+      "urls": [
+        "https://d1oyt3v08gcy18.cloudfront.net/index-events.m3u8",
+        "https://rtvclive.flumotion.cloud/rtvc1live/smil:channel1PRG.smil/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "DeLareduLinTV.TV",
+      "name": "De Laredu Lin TV",
+      "group": "Cantabria",
+      "logo": "/logos/DeLareduLinTV.TV.avif",
+      "urls": [
+        "https://eu1.servers10.com:8081/8034/index.m3u8"
+      ]
+    },
+    {
+      "id": "PopularTV_S.TV",
+      "name": "Popular TV Cantabria",
+      "group": "Cantabria",
+      "logo": "/logos/PopularTV_S.TV.png",
+      "urls": [
+        "https://limited12.todostreaming.es/live/ptvcantabria-livestream.m3u8"
+      ]
+    },
+    {
+      "id": "SajaNansaTV.TV",
+      "name": "Saja Nansa TV",
+      "group": "Cantabria",
+      "logo": "/logos/SajaNansaTV.TV.svg",
+      "urls": [
+        "https://streamlov.alsolnet.com/sajanansatv/live/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "AlcarriaTV.TV",
+      "name": "Alcarria TV",
+      "group": "Castilla-La Mancha",
+      "logo": "/logos/AlcarriaTV.TV.png",
+      "urls": [
+        "https://cls.alcarria.tv/live/alcarriatv-livestream.m3u8",
+        "http://217.182.77.27/live/alcarriatv-livestream.m3u8"
+      ]
+    },
+    {
+      "id": "Canal2000.TV",
+      "name": "Canal 2000 La Solana",
+      "group": "Castilla-La Mancha",
+      "logo": "/logos/Canal2000.TV.png",
+      "urls": [
+        "http://canal2000.berkano-systems.net/streaming/streams/canal2000.m3u8"
+      ]
+    },
+    {
+      "id": "Canal4Mancha.TV",
+      "name": "Canal 4 Mancha",
+      "group": "Castilla-La Mancha",
+      "logo": "/logos/Canal4Mancha.TV.jpg",
+      "urls": [
+        "https://5924d3ad0efcf.streamlock.net/canal4/canal4live/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "CMM.TV",
+      "name": "Castilla-La Mancha Media (CMM)",
+      "group": "Castilla-La Mancha",
+      "logo": "/logos/CMM.TV.png",
+      "urls": [
+        "https://cdnapisec.kaltura.com/p/2288691/sp/228869100/playManifest/entryId/1_gnz6ity9/protocol/https/format/applehttp/a.m3u8"
+      ]
+    },
+    {
+      "id": "GuadaTVMedia.TV",
+      "name": "Guada TV Media",
+      "group": "Castilla-La Mancha",
+      "logo": "/logos/GuadaTVMedia.TV.jpg",
+      "urls": [
+        "https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=12689&live=1"
+      ]
+    },
+    {
+      "id": "TVHellin.TV",
+      "name": "TV Hellín",
+      "group": "Castilla-La Mancha",
+      "logo": "/logos/TVHellin.TV.jpg",
+      "urls": [
+        "https://5940924978228.streamlock.net/directohellin/directohellin/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "TVAranda.TV",
+      "name": "TV Aranda",
+      "group": "Castilla y León",
+      "logo": "/logos/TVAranda.TV.png",
+      "urls": [
+        "https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=12686&live=1"
+      ]
+    },
+    {
+      "id": "24H_CAT.TV",
+      "name": "24h Catalunya",
+      "group": "Cataluña",
+      "logo": "/logos/24H_CAT.TV.jpg",
+      "urls": [
+        "https://ztnr.rtve.es/ztnr/4952053.m3u8",
+        "https://rtvelivestream.rtve.es/rtvesec/cat/24h_cat_main_dvr.m3u8"
+      ]
+    },
+    {
+      "id": "C33.TV",
+      "name": "33",
+      "group": "Cataluña",
+      "logo": "/logos/C33.TV.png",
+      "urls": [
+        "https://directes-tv-cat.3catdirectes.cat/live-content/c33-super3-hls/master.m3u8",
+        "https://directes-tv-cat.3catdirectes.cat/live-origin/c33-super3-hls/master.m3u8",
+        "https://directes-tv-es.3catdirectes.cat/live-content/c33-super3-hls/master.m3u8"
+      ]
+    },
+    {
+      "id": "Xarxa_Televisio_BDN.TV",
+      "name": "BDN Badalona TV",
+      "group": "Cataluña",
+      "logo": "/logos/Xarxa_Televisio_BDN.TV.jpg",
+      "urls": [
+        "https://liveingesta318.cdnmedia.tv/badalonatvlive/smil:live.smil/playlist.m3u8?DVR"
+      ],
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 CrKey/1.44.191160",
+        "referer": "https://player.instantvideocloud.net/"
+      }
+    },
+    {
+      "id": "BTV.TV",
+      "name": "betevé",
+      "group": "Cataluña",
+      "logo": "/logos/BTV.TV.png",
+      "urls": [
+        "https://cdnapisec.kaltura.com/p/2346171/sp/234617100/playManifest/entryId/1_vfibi2fe/protocol/https/format/applehttp/a.m3u8?referrer=aHR0cHM6Ly9iZXRldmUuY2F0"
+      ]
+    },
+    {
+      "id": "BonDiaTV_CAT.TV",
+      "name": "Bon Dia TV",
+      "group": "Cataluña",
+      "logo": "/logos/BonDiaTV_CAT.TV.png",
+      "urls": [
+        "https://directes-tv-cat.3catdirectes.cat/live-content/bondia-hls/master.m3u8",
+        "https://directes-tv-int.3catdirectes.cat/live-content/bondia-hls/master.m3u8"
+      ]
+    },
+    {
+      "id": "Xarxa_Canal_10_Emporda.TV",
+      "name": "Canal 10 Empordà",
+      "group": "Cataluña",
+      "logo": "/logos/Xarxa_Canal_10_Emporda.TV.png",
+      "urls": [
+        "https://ventdelnord.tv:8080/escala/directe.m3u8"
+      ]
+    },
+    {
+      "id": "Canal4Catalunya.TV",
+      "name": "Canal 4 TV Catalunya",
+      "group": "Cataluña",
+      "logo": "/logos/Canal4Catalunya.TV.avif",
+      "urls": [
+        "https://5caf24a595d94.streamlock.net:1937/8014/8014/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "Canal45.TV",
+      "name": "Canal 45",
+      "group": "Cataluña",
+      "logo": "/logos/Canal45.TV.png",
+      "urls": [
+        "https://nlb1-live.emitstream.com/hls/625csn5et2iszm9oze65/master.m3u8"
+      ]
+    },
+    {
+      "id": "Canal56.TV",
+      "name": "Canal 56",
+      "group": "Cataluña",
+      "logo": "/logos/Canal56.TV.png",
+      "urls": [
+        "https://videos.canal56.com/directe/stream/index.m3u8"
+      ]
+    },
+    {
+      "id": "Xarxa_Canal_Reus_TV.TV",
+      "name": "Canal Reus",
+      "group": "Cataluña",
+      "logo": "/logos/Xarxa_Canal_Reus_TV.TV.jpg",
+      "urls": [
+        "https://ingest2-video.streaming-pro.com/creus/stream/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "Xarxa_Canal_Taronja_Anoia.TV",
+      "name": "Canal Taronja Anoia",
+      "group": "Cataluña",
+      "logo": "/logos/Xarxa_Canal_Taronja_Anoia.TV.jpg",
+      "urls": [
+        "https://ingest1-video.streaming-pro.com/canaltaronja/anoia/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "Xarxa_Canal_Taronja_Central.TV",
+      "name": "Canal Taronja Central",
+      "group": "Cataluña",
+      "logo": "/logos/Xarxa_Canal_Taronja_Central.TV.jpg",
+      "urls": [
+        "https://ingest1-video.streaming-pro.com/canaltaronja/central/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "CanalTaronjaOsona.TV",
+      "name": "Canal Taronja Osona i Moianés",
+      "group": "Cataluña",
+      "logo": "/logos/CanalTaronjaOsona.TV.jpg",
+      "urls": [
+        "https://ingest1-video.streaming-pro.com/canaltaronja/osona/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "Xarxa_Canal_Terrassa.TV",
+      "name": "Canal Terrassa",
+      "group": "Cataluña",
+      "logo": "/logos/Xarxa_Canal_Terrassa.TV.jpg",
+      "urls": [
+        "https://ingest2-video.streaming-pro.com/canalterrassa/stream/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "Xarxa_EmpordaTV.TV",
+      "name": "Empordà TV",
+      "group": "Cataluña",
+      "logo": "/logos/Xarxa_EmpordaTV.TV.png",
+      "urls": [
+        "https://video3.lhdserver.es/empordatv2/live.m3u8"
+      ]
+    },
+    {
+      "id": "Xarxa_ETV.TV",
+      "name": "etv",
+      "group": "Cataluña",
+      "logo": "/logos/Xarxa_ETV.TV.jpg",
+      "urls": [
+        "https://liveingesta318.cdnmedia.tv/tvetvlive/smil:rtmp01.smil/playlist.m3u8?DVR"
+      ],
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 CrKey/1.44.191160",
+        "referer": "https://player.instantvideocloud.net/"
+      }
+    },
+    {
+      "id": "Xarxa_Televisio_Hospitalet.TV",
+      "name": "L'Hospitalet TV",
+      "group": "Cataluña",
+      "logo": "/logos/Xarxa_Televisio_Hospitalet.TV.png",
+      "urls": [
+        "https://liveingesta318.cdnmedia.tv/tvhospitaletlive/smil:tvhospitalet.smil/playlist.m3u8?DVR"
+      ],
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 CrKey/1.44.191160",
+        "referer": "https://player.instantvideocloud.net/"
+      }
+    },
+    {
+      "id": "La1_CAT.TV",
+      "name": "La 1 Catalunya",
+      "group": "Cataluña",
+      "logo": "/logos/La1_CAT.TV.png",
+      "urls": [
+        "https://rtvelivestream.rtve.es/rtvesec/cat/la1_cat_main_dvr.m3u8"
+      ]
+    },
+    {
+      "id": "La2_CAT.TV",
+      "name": "La 2 Cat",
+      "group": "Cataluña",
+      "logo": "/logos/La2_CAT.TV.jpg",
+      "urls": [
+        "https://rtvelivestream.rtve.es/rtvesec/cat/la2_cat_main_dvr.m3u8"
+      ]
+    },
+    {
+      "id": "Xarxa_LleidaTV.TV",
+      "name": "Lleida TV",
+      "group": "Cataluña",
+      "logo": "/logos/Xarxa_LleidaTV.TV.jpg",
+      "urls": [
+        "https://liveingesta318.cdnmedia.tv/lleidatvlive/smil:live.smil/playlist.m3u8?DVR",
+        "https://liveingesta118.cdnmedia.tv/lleidatvlive/smil:lleidatvocasional.smil/playlist.m3u8?DVR"
+      ],
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 CrKey/1.44.191160",
+        "referer": "https://player.instantvideocloud.net/"
+      }
+    },
+    {
+      "id": "Xarxa_Penedes_TV.TV",
+      "name": "Penedès TV",
+      "group": "Cataluña",
+      "logo": "/logos/Xarxa_Penedes_TV.TV.avif",
+      "urls": [
+        "https://liveingesta318.cdnmedia.tv/rtvvilafrancalive/smil:live.smil/playlist.m3u8?DVR"
+      ],
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 CrKey/1.44.191160",
+        "referer": "https://player.instantvideocloud.net/"
+      }
+    },
+    {
+      "id": "PieraTV.TV",
+      "name": "Piera TV",
+      "group": "Cataluña",
+      "logo": "/logos/PieraTV.TV.png",
+      "urls": [
+        "https://5d776b1861da1.streamlock.net/piera/smil:piera.smil/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "Xarxa_TV_Costa_Brava.TV",
+      "name": "TV Costa Brava",
+      "group": "Cataluña",
+      "logo": "/logos/Xarxa_TV_Costa_Brava.TV.png",
+      "urls": [
+        "https://liveingesta318.cdnmedia.tv/costabravatvlive/smil:live.smil/playlist.m3u8"
+      ],
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 CrKey/1.44.191160",
+        "referer": "https://player.instantvideocloud.net/"
+      }
+    },
+    {
+      "id": "Xarxa_TV_Sabadell_Valles.TV",
+      "name": "TV Sabadell - Vallès",
+      "group": "Cataluña",
+      "logo": "/logos/Xarxa_TV_Sabadell_Valles.TV.jpg",
+      "urls": [
+        "https://ingest1-video.streaming-pro.com/canaltaronja/sabadell/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "TV3.TV",
+      "name": "TV3",
+      "group": "Cataluña",
+      "logo": "/logos/TV3.TV.png",
+      "urls": [
+        "https://directes3-tv-cat.3catdirectes.cat/live-content/tv3-hls/master.m3u8",
+        "https://directes-tv-int-dev.3catdirectes.cat/live-content/tv3-uhd-cmaf/master.m3u8"
+      ]
+    },
+    {
+      "id": "Xarxa_VOTV.TV",
+      "name": "VOTV",
+      "group": "Cataluña",
+      "logo": "/logos/Xarxa_VOTV.TV.jpg",
+      "urls": [
+        "https://ingest2-video.streaming-pro.com/votv/streaming_web/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "C33M.TV",
+      "name": "Canal 33 Madrid",
+      "group": "Madrid",
+      "logo": "/logos/C33M.TV.jpg",
+      "urls": [
+        "https://media2.streambrothers.com:1936/8140/8140/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "Dejate.TV",
+      "name": "Déjate de Historias TV",
+      "group": "Madrid",
+      "logo": "/logos/Dejate.TV.jpg",
+      "urls": [
+        "https://limited44.todostreaming.es/live/dejatedeh-livestream.m3u8"
+      ]
+    },
+    {
+      "id": "Distrito.TV",
+      "name": "Distrito TV",
+      "group": "Madrid",
+      "logo": "/logos/Distrito.TV.png",
+      "urls": [
+        "https://live.emitstream.com/hls/3mn7wpcv7hbmxmdzaxap/master.m3u8"
+      ]
+    },
+    {
+      "id": "EsTuTele.TV",
+      "name": "EsTuTele",
+      "group": "Madrid",
+      "logo": "/logos/EsTuTele.TV.png",
+      "urls": [
+        "https://cloud.streamingconnect.tv/hls/estutele/estutele.m3u8"
+      ]
+    },
+    {
+      "id": "iPROtv.TV",
+      "name": "iPROtv",
+      "group": "Madrid",
+      "logo": "/logos/iPROtv.TV.jpg",
+      "urls": [
+        "https://59ec5453559f0.streamlock.net/iprotv/iprotv/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "LIRATV.TV",
+      "name": "LIRA TV",
+      "group": "Madrid",
+      "logo": "/logos/LIRATV.TV.jpg",
+      "urls": [
+        "https://cloud2.streaminglivehd.com:1936/liratv/liratv/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "Teleganes.TV",
+      "name": "Teleganés",
+      "group": "Madrid",
+      "logo": "/logos/Teleganes.TV.png",
+      "urls": [
+        "https://live.emitstream.com/hls/5z6oj7ziwxzfnj78vg2m/master.m3u8"
+      ]
+    },
+    {
+      "id": "Telemadrid.BC",
+      "name": "Telemadrid",
+      "group": "Madrid",
+      "logo": "/logos/Telemadrid.BC.png",
+      "urls": [],
+      "resolver": {
+        "type": "brightcove",
+        "account": "6416060453001",
+        "video": "6389770581112",
+        "policyKey": "BCpkADawqM3NEbF-VfhWkeqZ-VvbtOz3Ck-glPFUGbpuJZKbMZuXqUpB5QUIzHZcSBDRhqMED02XmDcxjSfh5O6KbAugVjXAZkUr1JvkXRtqnKUcE_x2JA5JhSZC7AFkFSzWcTKiOsiKe6C8E5gvQQIvMXtmuQQbzsaw3g",
+        "referer": "https://www.telemadrid.es/"
+      },
+      "headers": {
+        "referer": "https://www.telemadrid.es/",
+        "origin": "https://www.telemadrid.es"
+      }
+    },
+    {
+      "id": "7Televalencia.TV",
+      "name": "7 TeleValencia",
+      "group": "Comunitat Valenciana",
+      "logo": "/logos/7Televalencia.TV.jpg",
+      "urls": [
+        "https://play.cdn.enetres.net/9E9557EFCEBB43A89CEC8FBD3C500247022/028/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "8LaMarina.TV",
+      "name": "8 La Marina TV",
+      "group": "Comunitat Valenciana",
+      "logo": "/logos/8LaMarina.TV.png",
+      "urls": [
+        "https://streaming005.gestec-video.com/hls/canal24.m3u8"
+      ]
+    },
+    {
+      "id": "APunt.BC",
+      "name": "À Punt",
+      "group": "Comunitat Valenciana",
+      "logo": "/logos/APunt.BC.png",
+      "urls": [],
+      "resolver": {
+        "type": "brightcove",
+        "account": "6057955885001",
+        "video": "6137605659001",
+        "policyKey": "BCpkADawqM2Yrv2qlBGpB2FCRjQ97X2SDg4r2xbdzl5jKZbkiKrGFaQ2mCXaaNZWyEyQPtX4LR7OCKmYpat8jXceN9PP_qZMOMQSbNqeDf5kln0xC0-cI2KoRkf8ab1FLRVNVCORQA9ME8vg",
+        "referer": "https://www.apuntmedia.es/"
+      },
+      "headers": {
+        "referer": "https://www.apuntmedia.es/",
+        "origin": "https://www.apuntmedia.es"
+      }
+    },
+    {
+      "id": "Alacanti.TV",
+      "name": "Alacantí TV",
+      "group": "Comunitat Valenciana",
+      "logo": "/logos/Alacanti.TV.png",
+      "urls": [
+        "https://streaming01.gestec-video.com/hls/artequatreAlacanti.m3u8"
+      ]
+    },
+    {
+      "id": "BurrianaTeVe.TV",
+      "name": "Burriana TeVe",
+      "group": "Comunitat Valenciana",
+      "logo": "/logos/BurrianaTeVe.TV.jpg",
+      "urls": [
+        "https://stream.burrianateve.com:8443/hls/abr_burrianateve/index.m3u8"
+      ]
+    },
+    {
+      "id": "Elche7.TV",
+      "name": "Elche 7 TV",
+      "group": "Comunitat Valenciana",
+      "logo": "/logos/Elche7.TV.png",
+      "urls": [
+        "https://elche7tv.gestec-video.com/hls/canal2.m3u8"
+      ]
+    },
+    {
+      "id": "IntercomarcalTV.TV",
+      "name": "Intercomarcal TV",
+      "group": "Comunitat Valenciana",
+      "logo": "/logos/IntercomarcalTV.TV.png",
+      "urls": [
+        "https://streamingtvi.gestec-video.com/hls/tvixa.m3u8",
+        "https://streamingtvi.gestec-video.com/hls/tvixa1.m3u8",
+        "https://streamingtvi.gestec-video.com/hls/tvixa3.m3u8"
+      ]
+    },
+    {
+      "id": "8M.TV",
+      "name": "La 8 Mediterráneo",
+      "group": "Comunitat Valenciana",
+      "logo": "/logos/8M.TV.png",
+      "urls": [
+        "https://newscript.gestec-video.com/hls/8TVEVENTOS.m3u8"
+      ]
+    },
+    {
+      "id": "Maestrat.TV",
+      "name": "Maestrat TV",
+      "group": "Comunitat Valenciana",
+      "logo": "/logos/Maestrat.TV.png",
+      "urls": [
+        "https://stream.maestrat.tv/hls/stream.m3u8"
+      ]
+    },
+    {
+      "id": "OndaValencia.TV",
+      "name": "Onda Valencia TV",
+      "group": "Comunitat Valenciana",
+      "logo": "/logos/OndaValencia.TV.png",
+      "urls": [
+        "https://cloudvideo.servers10.com:8081/8116/index.m3u8"
+      ]
+    },
+    {
+      "id": "Punt3.TV",
+      "name": "Punt 3 Vall Uixó",
+      "group": "Comunitat Valenciana",
+      "logo": "/logos/Punt3.TV.png",
+      "urls": [
+        "https://bit.controlstreams.com:5443/LiveApp/streams/punt3.m3u8"
+      ]
+    },
+    {
+      "id": "TeleSafor2.TV",
+      "name": "Tele Safor",
+      "group": "Comunitat Valenciana",
+      "logo": "/logos/TeleSafor2.TV.png",
+      "urls": [
+        "https://video.telesafor.com/hls/video.m3u8"
+      ]
+    },
+    {
+      "id": "TeleElx.TV",
+      "name": "TeleElx",
+      "group": "Comunitat Valenciana",
+      "logo": "/logos/TeleElx.TV.png",
+      "urls": [
+        "https://tvdirecto.teleelx.es/stream/teleelx.m3u8"
+      ]
+    },
+    {
+      "id": "TV4LaVall.TV",
+      "name": "TV 4 La Vall",
+      "group": "Comunitat Valenciana",
+      "logo": "/logos/TV4LaVall.TV.jpg",
+      "urls": [
+        "https://valldeuxo.gestec-video.com/hls/lavall.m3u8"
+      ]
+    },
+    {
+      "id": "TVAlmassora.TV",
+      "name": "TV Almassora",
+      "group": "Comunitat Valenciana",
+      "logo": "/logos/TVAlmassora.TV.jpg",
+      "urls": [
+        "https://play.turesportmedia.com/hls/abr_tvalmassora/index.m3u8"
+      ]
+    },
+    {
+      "id": "tvA.TV",
+      "name": "tvA",
+      "group": "Comunitat Valenciana",
+      "logo": "/logos/tvA.TV.png",
+      "urls": [
+        "https://streaming007.gestec-video.com/hls/artequatreTVA.m3u8"
+      ]
+    },
+    {
+      "id": "UneVinalopo.TV",
+      "name": "Une Vinalopó",
+      "group": "Comunitat Valenciana",
+      "logo": "/logos/UneVinalopo.TV.png",
+      "urls": [
+        "https://streamingtvi.gestec-video.com/hls/unesd.m3u8"
+      ]
+    },
+    {
+      "id": "Extremadura.TV",
+      "name": "Canal Extremadura",
+      "group": "Extremadura",
+      "logo": "/logos/Extremadura.TV.avif",
+      "urls": [
+        "https://d2ymuyhevki1a1.cloudfront.net/wct-ddd2992e-86fc-4611-a491-7f392259e9ba/continuous/9be76611-d2cd-474d-bf19-ef702ba31b02/index.m3u8"
+      ]
+    },
+    {
+      "id": "TorosExtremadura.TV",
+      "name": "Toros (Canal Extremadura)",
+      "group": "Extremadura",
+      "logo": "/logos/TorosExtremadura.TV.avif",
+      "urls": [
+        "https://cdn-canalextremadura.watchity.net/fast1/master.m3u8"
+      ]
+    },
+    {
+      "id": "AnoveTV.TV",
+      "name": "Anove TV",
+      "group": "Galicia",
+      "logo": "/logos/AnoveTV.TV.jpg",
+      "urls": [
+        "https://cloud.streamingconnect.tv/hls/anove/anove.m3u8"
+      ]
+    },
+    {
+      "id": "Telemino.TV",
+      "name": "Telemiño",
+      "group": "Galicia",
+      "logo": "/logos/Telemino.TV.jpg",
+      "urls": [
+        "https://laregionlive.flumotion.cloud/laregionlive/smil:channel1.smil/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "TeleVigo.TV",
+      "name": "TeleVigo",
+      "group": "Galicia",
+      "logo": "/logos/TeleVigo.TV.png",
+      "urls": [
+        "https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=16113&live=1"
+      ]
+    },
+    {
+      "id": "TVGAL.TV",
+      "name": "TVG",
+      "group": "Galicia",
+      "logo": "/logos/TVGAL.TV.png",
+      "urls": [
+        "https://crtvg-europa.flumotion.cloud/playlist_dvr.m3u8"
+      ]
+    },
+    {
+      "id": "TVG2.TV",
+      "name": "TVG 2",
+      "group": "Galicia",
+      "logo": "/logos/TVG2.TV.png",
+      "urls": [
+        "https://crtvg-tvg2.flumotion.cloud/playlist_dvr.m3u8"
+      ]
+    },
+    {
+      "id": "TVR.TV",
+      "name": "TV Rioja",
+      "group": "La Rioja",
+      "logo": "/logos/TVR.TV.jpg",
+      "urls": [
+        "https://5924d3ad0efcf.streamlock.net/riojatv/riojatvlive/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "XaloaTelebista.TV",
+      "name": "Xaloa Telebista",
+      "group": "Navarra",
+      "logo": "/logos/XaloaTelebista.TV.jpg",
+      "urls": [
+        "https://streaming.mediacast.pro/live/xaloa/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "28Kanala.TV",
+      "name": "28 Kanala",
+      "group": "País Vasco",
+      "logo": "/logos/28Kanala.TV.png",
+      "urls": [
+        "https://streaming.28kanala.eus/hls/z.m3u8"
+      ]
+    },
+    {
+      "id": "ETB1.TV",
+      "name": "ETB 1",
+      "group": "País Vasco",
+      "logo": "/logos/ETB1.TV.png",
+      "urls": [
+        "https://cdn1.etbon.eus/etb1/index.m3u8"
+      ]
+    },
+    {
+      "id": "ETB1ON.TV",
+      "name": "ETB 1 On",
+      "group": "País Vasco",
+      "logo": "/logos/ETB1ON.TV.png",
+      "urls": [
+        "https://cdn1.etbon.eus/etb1on/index.m3u8"
+      ]
+    },
+    {
+      "id": "ETB2.TV",
+      "name": "ETB 2",
+      "group": "País Vasco",
+      "logo": "/logos/ETB2.TV.jpg",
+      "urls": [
+        "https://cdn1.etbon.eus/etb2/index.m3u8"
+      ]
+    },
+    {
+      "id": "ETB2ON.TV",
+      "name": "ETB 2 On",
+      "group": "País Vasco",
+      "logo": "/logos/ETB2ON.TV.svg",
+      "urls": [
+        "https://cdn1.etbon.eus/etb2on/index.m3u8"
+      ]
+    },
+    {
+      "id": "ETBON_Oca1.TV",
+      "name": "ETB Eventos 1",
+      "group": "País Vasco",
+      "logo": "/logos/ETBON_Oca1.TV.jpg",
+      "urls": [
+        "https://cdn1.etbon.eus/oc1/index.m3u8"
+      ]
+    },
+    {
+      "id": "ETBON_Oca2.TV",
+      "name": "ETB Eventos 2",
+      "group": "País Vasco",
+      "logo": "/logos/ETBON_Oca2.TV.jpg",
+      "urls": [
+        "https://cdn1.etbon.eus/oc2/index.m3u8"
+      ]
+    },
+    {
+      "id": "GoienaTV.TV",
+      "name": "Goiena Eus",
+      "group": "País Vasco",
+      "logo": "/logos/GoienaTV.TV.png",
+      "urls": [
+        "https://zuzenean.goienamedia.eus/goiena-telebista.m3u8"
+      ]
+    },
+    {
+      "id": "GUKATB.TV",
+      "name": "GUKA TB",
+      "group": "País Vasco",
+      "logo": "/logos/GUKATB.TV.jpg",
+      "urls": [
+        "https://streaming.ukt.eus/hls/test.m3u8"
+      ]
+    },
+    {
+      "id": "HamaikaTV.TV",
+      "name": "Hamaika TV",
+      "group": "País Vasco",
+      "logo": "/logos/HamaikaTV.TV.jpg",
+      "urls": [
+        "https://cdn3.wowza.com/1/RERMR282dnU5eE5Z/OHY0dVFs/hls/live/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "Tele7.TV",
+      "name": "Tele 7",
+      "group": "País Vasco",
+      "logo": "/logos/Tele7.TV.jpg",
+      "urls": [
+        "https://ingest2-video.streaming-pro.com/tele7_ABR/stream/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "ArabiTV.TV",
+      "name": "Arabí TV",
+      "group": "R. de Murcia",
+      "logo": "/logos/ArabiTV.TV.png",
+      "urls": [
+        "https://streamtv2.elitecomunicacion.cloud:3628/live/arabitv2025live.m3u8",
+        "https://servidor.islahostingla.com:3548/live/arabitvlive.m3u8"
+      ]
+    },
+    {
+      "id": "PopularMU.TV",
+      "name": "Popular TV Murcia",
+      "group": "R. de Murcia",
+      "logo": "/logos/PopularMU.TV.png",
+      "urls": [
+        "https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=12690&live=1"
+      ]
+    },
+    {
+      "id": "ADN40.TV",
+      "name": "ADN Noticias México",
+      "group": "Internacional",
+      "logo": "/logos/ADN40.TV.jpg",
+      "urls": [
+        "https://mdstrm.com/live-stream-playlist/60b578b060947317de7b57ac.m3u8"
+      ]
+    },
+    {
+      "id": "AlJQ.TV",
+      "name": "Al Jazeera Catar",
+      "group": "Internacional",
+      "logo": "/logos/AlJQ.TV.avif",
+      "urls": [
+        "https://live-hls-web-aje-gcp.thehlive.com/AJE/index.m3u8",
+        "https://live-hls-web-aja.getaj.net/AJA/index.m3u8"
+      ]
+    },
+    {
+      "id": "ATVHD.TV",
+      "name": "ATV Andorra",
+      "group": "Internacional",
+      "logo": "/logos/ATVHD.TV.avif",
+      "urls": [
+        "https://livesg1.rtva.hiway.media/11a6d6f4-ee13-47c7-9c27-7313cf5424e2/manifest.m3u8"
+      ]
+    },
+    {
+      "id": "Bloom.TV",
+      "name": "Bloomberg Europe",
+      "group": "Internacional",
+      "logo": "/logos/Bloom.TV.jpg",
+      "urls": [
+        "https://www.bloomberg.com/media-manifest/streams/eu.m3u8"
+      ]
+    },
+    {
+      "id": "CNNInt.TV",
+      "name": "CNN Internacional",
+      "group": "Internacional",
+      "logo": "/logos/CNNInt.TV.jpg",
+      "urls": [
+        "https://ds2c506obo7m8.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-7zjq3tdqasbg8/index.m3u8"
+      ]
+    },
+    {
+      "id": "DW.TV",
+      "name": "DW Alemania",
+      "group": "Internacional",
+      "logo": "/logos/DW.TV.jpg",
+      "urls": [
+        "https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8",
+        "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8"
+      ]
+    },
+    {
+      "id": "Medi1.TV",
+      "name": "Medi1 TV Marruecos",
+      "group": "Internacional",
+      "logo": "/logos/Medi1.TV.png",
+      "urls": [
+        "https://cdn.live.easybroadcast.io/abr_corp/83_medi1tv-arabic_g90v4ec/playlist_dvr.m3u8",
+        "https://cdn.live.easybroadcast.io/abr_corp/83_medi1tv-maghreb_jnbspmg/playlist_dvr.m3u8",
+        "https://cdn.live.easybroadcast.io/abr_corp/83_medi1tv-afrique_tm7tu45/playlist_dvr.m3u8"
+      ]
+    },
+    {
+      "id": "TVE_STAR.TV",
+      "name": "Star TVE Europa",
+      "group": "Internacional",
+      "logo": "/logos/TVE_STAR.TV.png",
+      "urls": [
+        "https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/star_main_dvr_1080.m3u8",
+        "https://rtvelivestream.rtve.es/rtvesec/int/star_main_dvr.m3u8"
+      ]
+    },
+    {
+      "id": "TeleSUR.TV",
+      "name": "TeleSUR Venezuela",
+      "group": "Internacional",
+      "logo": "/logos/TeleSUR.TV.avif",
+      "urls": [
+        "https://mblesmain01.telesur.ultrabase.net/mbliveMain/hd/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "TVC.TV",
+      "name": "TV3 CAT",
+      "group": "Internacional",
+      "logo": "/logos/TVC.TV.png",
+      "urls": [
+        "https://directes-tv-es.3catdirectes.cat/live-content/tvc-hls/master.m3u8",
+        "https://directes-tv-es.3catdirectes.cat/live-origin/tvc-hls/master.m3u8",
+        "https://directes3-tv-int.3catdirectes.cat/live-content/tvi-hls/master.m3u8"
+      ]
+    },
+    {
+      "id": "TV5Monde.TV",
+      "name": "TV5Monde Francia",
+      "group": "Internacional",
+      "logo": "/logos/TV5Monde.TV.jpg",
+      "urls": [
+        "https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/variant.m3u8"
+      ]
+    },
+    {
+      "id": "TVE_INTER.TV",
+      "name": "TVE Internacional Europa",
+      "group": "Internacional",
+      "logo": "/logos/TVE_INTER.TV.png",
+      "urls": [
+        "https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/tvei_eu_main_dvr_1080.m3u8",
+        "https://rtvelivestream.rtve.es/rtvesec/int/tvei_eu_main_dvr.m3u8"
+      ]
+    },
+    {
+      "id": "SolMusica.TV",
+      "name": "Sol Música España",
+      "group": "Música",
+      "logo": "/logos/SolMusica.TV.png",
+      "urls": [
+        "https://d2glyu450vvghm.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-21u4g5cjglv02/sm.m3u8"
+      ]
+    },
+    {
+      "id": "EWTN.TV",
+      "name": "EWTN USA",
+      "group": "Religión",
+      "logo": "/logos/EWTN.TV.png",
+      "urls": [
+        "https://cdn3.wowza.com/1/SmVrQmZCUXZhVDgz/b3J3MFJv/hls/live/playlist.m3u8",
+        "https://1211313014.rsc.cdn77.org/1211313014/index.m3u8",
+        "https://cdn3.wowza.com/1/YW5wSWZiRGd2eFlU/bGV0aVBq/hls/live/playlist.m3u8"
+      ]
+    }
+  ]
+}

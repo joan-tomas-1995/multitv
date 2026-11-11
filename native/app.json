@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "MultiTV",
+    "slug": "multitv",
+    "version": "1.0.0",
+    "description": "Todas las TVs españolas en directo en un mosaico, con control instantáneo de audio, pausa y pantalla completa.",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "scheme": "multitv",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#070a10",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.multitv.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoadsForMedia": true
+        }
+      }
+    },
+    "android": {
+      "package": "com.multitv.app",
+      "versionCode": 1,
+      "predictiveBackGestureEnabled": false,
+      "adaptiveIcon": {
+        "backgroundColor": "#070a10",
+        "foregroundImage": "./assets/adaptive-icon.png"
+      },
+      "permissions": [
+        "android.permission.INTERNET"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-video",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 220,
+          "resizeMode": "contain",
+          "backgroundColor": "#070a10",
+          "dark": {
+            "backgroundColor": "#070a10"
+          }
+        }
+      ],
+      "expo-font"
+    ]
+  }
+}

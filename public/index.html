@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Parrilla de televisiones españolas en directo con audio exclusivo por canal, pausa, solo y pantalla completa.">
+  <meta name="theme-color" content="#070a10">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="MultiTV">
+  <title>MultiTV — Todas las teles en directo</title>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <svg class="icon-sprite" aria-hidden="true">
+    <symbol id="i-menu" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></symbol>
+    <symbol id="i-volume" viewBox="0 0 24 24"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></symbol>
+    <symbol id="i-muted" viewBox="0 0 24 24"><path d="M11 5 6 9H2v6h4l5 4V5z"/><line x1="22" y1="9" x2="16" y2="15"/><line x1="16" y1="9" x2="22" y2="15"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><polygon points="7 4 20 12 7 20 7 4"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/></symbol>
+    <symbol id="i-solo" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><line x1="8" y1="4" x2="8" y2="20"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></symbol>
+    <symbol id="i-tv" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><polyline points="17 2 12 7 7 2"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 3h7v7"/><path d="M10 14 21 3"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></symbol>
+  </svg>
+
+  <div class="app" id="app">
+    <header class="topbar">
+      <button class="icon-btn" id="sidebar-toggle" aria-label="Mostrar u ocultar canales" title="Mostrar u ocultar canales">
+        <svg><use href="#i-menu"></use></svg>
+      </button>
+      <a class="brand" href="/" aria-label="MultiTV, inicio">
+        <span class="brand-badge"><svg><use href="#i-tv"></use></svg></span>
+        <span class="brand-name">Multi<strong>TV</strong></span>
+      </a>
+      <div class="clock" id="clock" title="Hora peninsular">--:--:--</div>
+
+      <label class="search" for="search">
+        <svg><use href="#i-search"></use></svg>
+        <input id="search" type="search" placeholder="Buscar canal…" autocomplete="off" spellcheck="false">
+      </label>
+
+      <div class="top-actions">
+        <div class="segmented" id="columns" role="group" aria-label="Distribución de la parrilla">
+          <button type="button" data-cols="auto" title="Distribución automática" aria-label="Distribución automática">Auto</button>
+          <button type="button" data-cols="2" title="2 columnas">2</button>
+          <button type="button" data-cols="3" title="3 columnas">3</button>
+          <button type="button" data-cols="4" title="4 columnas">4</button>
+        </div>
+        <button class="btn ghost" id="mute-all" type="button" title="Silenciar todas las TVs">
+          <svg><use href="#i-muted"></use></svg><span>Silenciar</span>
+        </button>
+        <button class="btn ghost" id="pause-all" type="button" title="Pausar o reanudar todas las TVs">
+          <svg><use href="#i-pause"></use></svg><span>Pausar</span>
+        </button>
+        <button class="btn primary" id="add-channel" type="button" title="Añadir un canal propio">
+          <svg><use href="#i-plus"></use></svg><span>Canal</span>
+        </button>
+      </div>
+    </header>
+
+    <aside class="sidebar" id="sidebar" aria-label="Lista de canales">
+      <div class="sidebar-head">
+        <span>Canales</span>
+        <span class="sidebar-count" id="channel-count"></span>
+      </div>
+      <div class="channel-list" id="channel-list"></div>
+      <div class="sidebar-foot">
+        <div class="sidebar-actions">
+          <button class="btn ghost small" id="import-m3u" type="button">Importar lista M3U</button>
+          <button class="btn ghost small" id="install-app" type="button" hidden>
+            <svg><use href="#i-download"></use></svg>
+            <span>Instalar app</span>
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <main class="stage" id="stage">
+      <div class="grid" id="grid"></div>
+
+      <div class="empty" id="empty" hidden>
+        <svg><use href="#i-tv"></use></svg>
+        <h2>Tu parrilla está vacía</h2>
+        <p>Elige canales en la lista de la izquierda o añade una lista M3U.</p>
+      </div>
+
+      <button class="exit-solo" id="exit-solo" type="button" hidden>
+        <svg><use href="#i-solo"></use></svg> Salir de solo
+      </button>
+
+      <footer class="statusbar">
+        <span id="status">Cargando canales…</span>
+        <span class="keys">
+          <kbd>1</kbd>–<kbd>9</kbd> elegir · <kbd>M</kbd> silenciar · <kbd>Espacio</kbd> pausa · <kbd>S</kbd> solo · <kbd>F</kbd> pantalla completa
+        </span>
+      </footer>
+    </main>
+  </div>
+
+  <div class="catalog-error" id="catalog-error" hidden>
+    <div class="catalog-error-card">
+      <h2>No se pudo cargar el catálogo</h2>
+      <p id="catalog-error-detail"></p>
+      <p>Ejecuta <code>npm run catalog</code> para generar <code>data/channels.json</code> y recarga la página.</p>
+      <button class="btn primary" type="button" onclick="location.reload()">Reintentar</button>
+    </div>
+  </div>
+
+  <dialog class="dialog" id="dialog-channel">
+    <form id="form-channel" novalidate>
+      <h2>Añadir canal</h2>
+      <p class="dialog-lead">Un canal HLS propio, por ejemplo de tu proveedor legal o de una lista privada.</p>
+      <label>Nombre
+        <input name="name" maxlength="60" required autocomplete="off" placeholder="Mi canal">
+      </label>
+      <label>URL del stream
+        <input name="url" type="url" required autocomplete="off" placeholder="https://ejemplo.com/directo/index.m3u8">
+      </label>
+      <div class="field-row">
+        <label>Logo (opcional)
+          <input name="logo" type="url" autocomplete="off" placeholder="https://…/logo.png">
+        </label>
+        <label>Referer (opcional)
+          <input name="referer" autocomplete="off" placeholder="https://…">
+        </label>
+      </div>
+      <p class="dialog-hint">Solo HLS (<code>.m3u8</code>). Si el canal necesita cabeceras especiales, indica el referer.</p>
+      <div class="dialog-actions">
+        <button class="btn ghost" type="button" data-close>Cancelar</button>
+        <button class="btn primary" type="submit">Añadir canal</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog class="dialog" id="dialog-import">
+    <form id="form-import">
+      <h2>Importar lista M3U</h2>
+      <p class="dialog-lead">Pega una lista M3U o elige un archivo. Los canales se guardan solo en este navegador.</p>
+      <label>Contenido de la lista
+        <textarea name="playlist" rows="9" placeholder="#EXTM3U&#10;#EXTINF:-1,La 1&#10;https://…/la1.m3u8"></textarea>
+      </label>
+      <label class="file-label">O elige un archivo
+        <input type="file" id="m3u-file" accept=".m3u,.m3u8,text/plain">
+      </label>
+      <p class="dialog-hint" id="import-hint"></p>
+      <div class="dialog-actions">
+        <button class="btn ghost" type="button" data-close>Cancelar</button>
+        <button class="btn primary" type="submit">Importar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog class="dialog" id="dialog-install">
+    <form method="dialog">
+      <h2>Instalar MultiTV</h2>
+      <p class="dialog-lead">Añádela a la pantalla de inicio para abrirla como una app, sin barra del navegador.</p>
+      <ol class="install-steps" id="install-steps">
+        <li>Abre esta página en Chrome (Android) o Safari (iPhone/iPad).</li>
+        <li>Abre el menú del navegador.</li>
+        <li>Elige «Instalar aplicación» o «Añadir a pantalla de inicio».</li>
+      </ol>
+      <div class="dialog-actions">
+        <button class="btn primary" value="close">Entendido</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <template id="tile-template">
+    <article class="tile" tabindex="0">
+      <video playsinline autoplay muted></video>
+      <div class="tile-shade"></div>
+
+      <div class="tile-loading">
+        <span class="spinner"></span>
+        <span class="tile-loading-text">Conectando…</span>
+      </div>
+
+      <div class="tile-error" hidden>
+        <span class="tile-error-title">Sin señal</span>
+        <span class="tile-error-detail"></span>
+        <div class="tile-error-actions">
+          <button class="btn small" type="button" data-action="retry">Reintentar</button>
+          <button class="btn ghost small" type="button" data-action="remove">Quitar</button>
+        </div>
+      </div>
+
+      <header class="tile-top">
+        <span class="tile-logo-wrap">
+          <img class="tile-logo" alt="" loading="lazy" decoding="async">
+          <span class="tile-initials" aria-hidden="true"></span>
+        </span>
+        <span class="tile-name"></span>
+        <span class="tile-audio" title="Escuchando" hidden>
+          <i></i><i></i><i></i>
+        </span>
+        <span class="tile-live"><i></i>LIVE</span>
+        <button class="tile-close" type="button" data-action="remove" title="Quitar de la parrilla" aria-label="Quitar de la parrilla">
+          <svg><use href="#i-x"></use></svg>
+        </button>
+      </header>
+
+      <div class="tile-paused">Pausado</div>
+
+      <div class="tile-controls">
+        <button class="tile-btn" type="button" data-action="mute" title="Silenciar / activar audio (M)">
+          <svg><use href="#i-volume"></use></svg>
+        </button>
+        <button class="tile-btn" type="button" data-action="play" title="Pausar / reanudar (Espacio)">
+          <svg><use href="#i-pause"></use></svg>
+        </button>
+        <button class="tile-btn" type="button" data-action="solo" title="Ver solo este canal (S)">
+          <svg><use href="#i-solo"></use></svg>
+        </button>
+        <button class="tile-btn" type="button" data-action="fullscreen" title="Pantalla completa (F)">
+          <svg><use href="#i-expand"></use></svg>
+        </button>
+        <input class="tile-volume" type="range" min="0" max="1" step="0.01" title="Volumen" aria-label="Volumen">
+      </div>
+    </article>
+  </template>
+
+  <script src="/vendor/hls.min.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

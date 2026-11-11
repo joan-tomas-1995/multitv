@@ -1,0 +1,14 @@
+node_modules/
+.cache/
+*.log
+.DS_Store
+Thumbs.db
+
+# Entorno
+.env
+.env.*
+!.env.example
+
+# Salidas de build
+dist/
+*.tsbuildinfo

@@ -1,0 +1,29 @@
+{
+  "name": "multitv",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Parrilla multi-TV con los canales españoles en directo",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joan-tomas-1995/multitv.git"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "catalog": "node scripts/build-catalog.mjs",
+    "icons": "node scripts/build-icons.mjs",
+    "native:sync": "node scripts/sync-native.mjs",
+    "validate": "node scripts/validate-catalog.mjs",
+    "check": "node --check server.mjs && node --check public/app.js && node --check scripts/build-catalog.mjs && node --check scripts/validate-catalog.mjs && npm run validate"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "hls.js": "^1.6.13"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.5"
+  }
+}
