@@ -5,6 +5,8 @@
 
 Parrilla de televisiones españolas en directo dentro de una sola pestaña: todas las TVs a la vez, en mosaico, y control instantáneo de cuál se escucha, cuál se silencia, cuál se pausa o cuál se ve a pantalla completa. Incluye **versión web/PWA** y **app nativa** para iOS y Android.
 
+![Interfaz de MultiTV con seis canales en mosaico](docs/multitv-web.png)
+
 ## Requisitos
 
 - **Node.js 22 o superior** (el proyecto usa `fetch` nativo y módulos ES).
